@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toss1 Fantasy Cricket App | Play & Win Real Cash | Cricket League App</title>
+    <!-- ---------------favicon------------- -->
+    <link rel="shortcut icon" href="assets/img/favs.png" type="image/x-icon">
+    <!-- Bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- font owesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+</head>
+<style>
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 7));
+        }
+    }
+
+    .slider {
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    /* .slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+} */
+    /* .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+} */
+    .slider .slide-track {
+        -webkit-animation: scroll 40s linear infinite;
+        animation: scroll 5s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+
+    .slider .slide {
+        width: 250px;
+        margin: 0 20px;
+    }
+</style>
+</style>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- <div class="preloader"></div> -->
+    <!-- ============================================================== -->
+    <!--*********************** Nav Start****************************** -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger shadow-sm py-0">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/Gold-Logo.png" alt="Compnaylogo" class="img-fluid brand-logo" width="150">
+            </a>
+            <button class="navbar-toggler border border-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class=" "><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fw-bold  " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fw-bold" href="#">Features</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">About</a>
+                    </li>
+                    <li class="nav-item mx-3 dropdown">
+                        <a class="nav-link fw-bold" href="privacy_policy.html">Privacy & Policy</a>
+                    </li>
+                    <li class="nav-item mx-3 dropdown">
+                        <a class="nav-link fw-bold" href="term_condition.html">Term and Condition</a>
+                    </li>
+                    <li class="nav-item mx-lg-3 dropdown ms-lg-5">
+                        <a class="nav-link fw-bold bg-white rounded-3 fw-bold  text-dark" href="#">
+                            Download Now
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================== about us modal =============== -->
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-danger" id="exampleModalLabel">About Toss1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Toss1 is the flagship product of Fantasy Sports Toss1 Private Limited. Toss1 is India’s Biggest
+                    Sports Gaming platform with users playing Fantasy Cricket. It is a fantasy Sports Management
+                    platform that offers Indian sports fans a platform to showcase their sports knowledge. User can
+                    create their own team made up of real-life players from upcoming matches, score points based on
+                    their on-field performance and compete with other User.
+                </div>
+                 
+            </div>
+        </div>
+    </div>
+    <!--*********************** nav End****************************** -->
+    <!-- ******************** Hero Section ****************** -->
+    <section class="hero-slide3 d-flex align-items-center">
+        <div class="container ">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-8 col-12 ">
+                    <h2 class="text-uppercase intro  fw-bolder text-left text-white ">PLAY WISELY ​
+                        WIN EASILY <br> <span class="text-danger ">#INDIA'S</span> FIRST COMPARATIVE
+                        <br> FANTASY SPORTS GAME</h2>
+                    <a class=" fw-bold bg-white rounded-3 text-dark btn btn-light mt-4" href="#">
+                        Download Now
+                    </a>
+                </div>
+                <div class="col-md-4 col-12 threeD">
+                    <img src="assets/img/player.png" alt="" height="500">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******************** Hero Section  end ****************** -->
+    <!-- download link -->
+
+    <!-- user and downlod info -->
+    <section class="py-5  ">
+        <div class="container">
+            <div class="row g-3 count ">
+                <div class="col-12 col-md-6 col-lg-2 mx-3">
+                    <div class="downlod-inner rounded shadow-sm bg-danger ">
+                        <div class="counter-img text-center">
+                            <img src="assets/img/counter-icon-1.png" alt="download-icon" class="img-fluid mt-2 mx-auto">
+                        </div>
+                        <div class="text-center mt-2">
+                            <h4 class="fw-bold text-white">5 Lakh +</h4>
+                            <h6 class="text-white">Downloads</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-2 mx-3">
+                    <div class="downlod-inner rounded shadow-sm bg-danger ">
+                        <div class="counter-img text-center">
+                            <img src="assets/img/counter-icon-2.png" alt="download-icon" class="img-fluid mt-2 mx-auto">
+                        </div>
+                        <div class="text-center mt-2">
+                            <h4 class="fw-bold text-white">100 +</h4>
+                            <h6 class="text-white">Daily contests</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-2 mx-3">
+                    <div class="downlod-inner rounded shadow-sm bg-danger ">
+                        <div class="counter-img text-center">
+                            <img src="assets/img/counter-icon-3.png" alt="download-icon" class="img-fluid mt-2 mx-auto">
+                        </div>
+                        <div class="text-center mt-2">
+                            <h4 class="fw-bold text-white">₹ 1.5 Crore+</h4>
+                            <h6 class="text-white">Daily Winnings</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-2 mx-3">
+                    <div class="downlod-inner rounded shadow-sm bg-danger ">
+                        <div class="counter-img text-center">
+                            <img src="assets/img/counter-icon-4.png" alt="download-icon" class="img-fluid mt-2 mx-auto">
+                        </div>
+                        <div class="text-center mt-2">
+                            <h4 class="fw-bold text-white">LOWEST ENTRY FEE</h4>
+                            <h6 class="text-white">LOWEST ENTRY FEE</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" py-5 contact-hero" id="howtoplay">
+        <div class="text-center">
+            <h2 class="text-white fs-4 fw-bold">How to Play Toss1 <span class="text-warning fs-3">Game</span>
+            </h2>
+        </div>
+        <div class="container h-100">
+            <div class="row align-items-center h-100 justify-content-between  play">
+
+                <!-- step-counter-1-->
+                <div class="col-12 col-md-6 col-lg-4 mx-2" style="margin-top: 106px;">
+                    <div class="rounded border position-relative bg-light">
+                        <!-- step-counter -->
+                        <div class="step-counter">
+                            <h3>1</h3>
+                        </div>
+                        <div class="contry-box position-absolute rounded">
+                            <div class="d-flex justify-content-between align-items-center h-100 p-2">
+                                <div
+                                    class="border-top border-5 border-bottom border-4 py-2  d-flex d-flex align-items-center">
+                                    <img src="assets/img/india-1.png" alt="" class="rounded-circle img-fluid">
+                                    <span class="ms-1 text-white">IND</span>
+                                </div>
+                                <span class="text-white">V/S</span>
+                                <div class="d-flex d-flex align-items-center">
+                                    <span class="me-1 text-white">AUS</span>
+                                    <img src="assets/img/aust-flag.jpg" alt="" class="rounded-circle img-fluid">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 mt-3">
+                            <h2 class="fs-4  fw-bolder">Select A Match</h2>
+                            <p>Choose an upcoming match that attracts you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- step-counter-2-->
+                <div class="col-12 col-md-6 col-lg-4 mx-2" style="margin-top: 106px;">
+                    <div class="rounded border position-relative bg-light">
+                        <!-- step-counter -->
+                        <div class="step-counter">
+                            <h3>2</h3>
+                        </div>
+                        <div class="contry-box position-absolute rounded">
+                            <div class="d-flex justify-content-between align-items-center h-100 p-2">
+                                <div class=" ">
+                                    <img src="assets/img/ms.d.webp" alt="" class="rounded-circle img-fluid">
+                                    <span class="text-center text-white">Ms.Dhoni</span>
+                                </div>
+                                <div>
+                                    <img src="assets/img/virat-kohli.webp" alt="" class="rounded-circle img-fluid">
+                                    <span class="text-white">V.Kohli</span>
+                                </div>
+                                <div>
+                                    <img src="assets/img/dinesh-karthik.webp" alt="" class="rounded-circle img-fluid">
+                                    <span class="text-white">D.Kartik</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 mt-3">
+                            <h2 class="fs-4  fw-bolder">Create Your Team</h2>
+                            <p>Now is the chance to build your dream team.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- step-counter-3 -->
+                <div class="col-12 col-md-6 col-lg-4 mx-2" style="margin-top: 106px;">
+                    <div class="rounded border position-relative bg-light">
+                        <!-- step-counter -->
+                        <div class="step-counter">
+                            <h3>3</h3>
+                        </div>
+                        <div class="contry-box position-absolute rounded">
+                            <div class="d-flex justify-content-between align-items-center h-100 p-2">
+                                <div class="border-top border-5 border-bottom border-4 py-2 d-flex align-items-center">
+                                    <span class="fw-bolc text-white fs-5">&#x20B9; 1 Crore.</span>
+                                </div>
+                                <div class="d-flex d-flex align-items-center">
+                                    <span class="py-1 px-2 rounded shadow-lg text-white border border-light">Join</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 mt-3">
+                            <h2 class="fs-4  fw-bolder">Join Any Contest</h2>
+                            <p>100+ contests available for you, choose any!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- **************************how to download********************** -->
+    <section class="py-5 d-none" id="htd">
+        <div class="container">
+
+            <div class="row justify-content-between g-3">
+                <div class="text-center">
+                    <h2>Hey, very easy to Download <span class="t-color">Toss1</span></h2>
+                    <p class="w-75 mx-auto">iOS users can download Toss1 from the App Store while fantasy sports
+                        are offered as .apk for our Android users. Here’s the process for our Android users to download
+                        and install.</p>
+                </div>
+                <!-- stpe-1 -->
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="mobile-box">
+                        <div class="cir-shape translate-middle">1</div>
+
+                        <div class="btn-shape translate-middle"></div>
+                        <div class="p-2">
+                            <p class=" text-white" style="font-size: 10px;"><i
+                                    class="fa-solid fa-download t-color me-1"></i>Do You want to Download <span
+                                    class=" ">Toss1.apk</span></p>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-end">
+                            <button class="btn bg-blue me-3 text-white">Cancel</button>
+                            <button class="btn bg-blue me-3 text-white">DownLoad</button>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p class="">
+                            Open <span class="text-muted fw-bold">Toss1.com</span> & click on
+                            <span class=" fw-bold">“Download for Android”</span> button
+                        </p>
+                    </div>
+                </div>
+                <!-- step-2 -->
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="mobile-box">
+                        <div class="cir-shape translate-middle">2</div>
+
+                        <div class="btn-shape translate-middle"></div>
+                        <div class="p-2">
+                            <p class=" text-white" style="font-size: 10px;"><i
+                                    class="fa-solid fa-check t-color me-1"></i>Toss1.apk<span
+                                    class="t-color ms-1">Open</span></p>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-end">
+
+                            <button class="btn bg-blue me-3 text-white">Open</button>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p class="">
+                            <p class="">
+                                Let the apk download and then
+                                <span class="  fw-bold">“Open</span> button
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <!-- step-3 -->
+                <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="mobile-box">
+                        <div class="cir-shape translate-middle">3</div>
+
+                        <div class="btn-shape translate-middle"></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class=" text-white ms-3 mb-0" style="font-size: 10px;">Allow From this source </p>
+                            <i class="fa-solid fa-toggle-on text-white me-3 "></i>
+                        </div>
+                        <div class="p-2">
+                            <p class=" text-white" style="font-size: 10px;">Your phone and personal data are more
+                                vulnerable to attacks from unknown apps. By installing apps from other sources, you
+                                agree that you're responsible for any damage to your device or loss of data that may
+                                result from their use.</p>
+                        </div>
+
+                    </div>
+                    <div class="mt-3">
+                        <p class="">
+                            Click <span class=" fw-bold"> “Allow for this Source”</span>
+                            when prompted & then click on
+                            <span class="  fw-bold"> "Install"</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============== gaming logo slider ================ -->
+
+
+    <section class=" py-5 ">
+        <div class="text-center mb-5">
+            <h2 class="  fs-4 fw-bold ">Some Special Game </h2>
+        </div>
+        <div class="container">
+            <div class="slider">
+                <div class="slide-track sliders-game">
+                    <div class="slide">
+                        <img src="assets/img/pokemon.jpeg" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/lucky.jpg" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/3 patti.webp" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/poker.avif" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/7up.png" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/pokemon.jpeg" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/lucky.jpg" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/3 patti.webp" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/poker.avif" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/7up.png" height="100" width="250" alt="" class="rounded-4" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Amazing Feature -->
+    <section class="py-5 " id="af">
+        <div class="container">
+            <div class="row ">
+                <div class="text-center mb-5">
+                    <h2 class=" fw-bold">Amazing Features</h2>
+                    <p>We are offering the coolest features to our users.</p>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="co-12">
+                        <div class="border d-flex shadow-sm p-4 mb-3">
+                            <div class="easy-img">
+                                <img src="assets/img/thumbs-up.jpg" alt="easysignup-icon" class="img-fluid ">
+                            </div>
+                            <div class="easy-content ms-3">
+                                <span class="title">Easy Sign up
+                                </span>
+                                <p>
+                                    Sign up with your fb or Google+ account
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="co-12">
+                        <div class="border d-flex shadow-sm p-4 mb-3">
+                            <div class="easy-img">
+                                <img src="assets/img/notify.png" alt="easysignup-icon" class="img-fluid ">
+                            </div>
+                            <div class="easy-content ms-3">
+                                <span class="title">
+                                    Push Notifications
+                                </span>
+                                <p>
+                                    Notifying on every league and contest there is.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="co-12">
+                        <div class="border d-flex shadow-sm p-4">
+                            <div class="easy-img">
+                                <img src="assets/img/medal.png" alt="easysignup-icon" class="img-fluid ">
+                            </div>
+                            <div class="easy-content ms-3">
+                                <span class="title">
+                                    100+ Everyday Contest
+                                </span>
+                                <p>
+                                    For every budget, free to lakhs, we got your back.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 d-none d-lg-block">
+                    <div class="appSreeen text-center">
+                        <img src="assets/img/Rectangle.png" alt="ammazing-app" class="img-fluid" style="height:500px;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="co-12">
+                        <div class="border d-flex shadow-sm p-4 mb-3">
+                            <div class="easy-img">
+                                <img src="assets/img/medal.png" alt="easysignup-icon" class="img-fluid ">
+                            </div>
+                            <div class="easy-content ms-3">
+                                <span class="title">Huge Rewards
+                                </span>
+                                <p>
+                                    Huge number of rewards and money.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="co-12">
+                        <div class="border d-flex shadow-sm p-4 mb-3">
+                            <div class="easy-img">
+                                <img src="assets/img/cash.png" alt="easysignup-icon" class="img-fluid ">
+                            </div>
+                            <div class="easy-content ms-3">
+                                <span class="title">
+                                    Sign Up & Refer Bonus
+                                </span>
+                                <p>
+                                    There is money in everything! So, sign up and refer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="co-12">
+                        <div class="border d-flex shadow-sm p-4">
+                            <div class="easy-img">
+                                <img src="assets/img/fairplay-3.png" alt="easysignup-icon" class="img-fluid ">
+                            </div>
+                            <div class="easy-content ms-3">
+                                <span class="title">
+                                    Fast Withdrawals
+                                </span>
+                                <p>
+                                    Use Can Withdraw winning prize easly and quickly
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Screenshot -->
+    <section class=" py-5 ">
+        <div class="text-center mb-5">
+            <h2 class="  fs-4 fw-bold ">Screenshot </h2>
+            <p>Some Screenshot of Our App</p>
+        </div>
+        <div class="container h-100">
+            <div class="row align-items-center h-100 justify-content-between  sliders">
+
+                <!-- step-counter-1-->
+                <div class="col-12 col-md-6 col-lg-2">
+                    <img src="assets/img/1.png" alt="" class="img-fluid mx-auto slid-img">
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 text-center">
+                    <img src="assets/img/2.png" alt="" class="img-fluid mx-auto slid-img">
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 text-center">
+                    <img src="assets/img/3.png" alt="" class="img-fluid mx-auto slid-img">
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 text-center">
+                    <img src="assets/img/4.png" alt="" class="img-fluid mx-auto slid-img">
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 text-center">
+                    <img src="assets/img/5.png" alt="" class="img-fluid mx-auto slid-img">
+                </div>
+                <div class="col-12 col-md-6 col-lg-2 text-center">
+                    <img src="assets/img/6.png" alt="" class="img-fluid mx-auto slid-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************Footer Section   **************** -->
+    <footer class="bg-danger">
+        <div class="container">
+            <div class="row py-3 justify-content-between ">
+
+
+
+                <div class="col-6 col-md-4 ">
+                    <div class=" ">
+                        <a href="#home">
+                            <img src="assets/img/Gold-Logo.png" alt="footerlogo" class="img-fluid" width="200">
+                        </a>
+                    </div>
+                    <div class="  mt-3">
+                        <span class="text-white ">All Rights Reserved &copy; 2023
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <div class=" ">
+                        <h5 class="text-white">Download the App</h5>
+                        <a class=" footer-download mt-3 bg-white rounded-3 fw-bold p-3 text-dark" href="#">
+                            Download Now
+                        </a>
+                    </div>
+
+                </div>
+                <!--col-1 end-->
+                <div class="col-6 col-md-4 col-lg-2 ">
+                    <ul class="p-0">
+                        <li class="mb-1 text-white fw-bold">UseFull Links</li>
+                        <li class="mb-1"><a href="#home" class=" nav-link text-white">Home</a></li>
+                        <li class="mb-1"><a href="#" class=" nav-link text-white">About Us</a></li>
+                        <li class="mb-1"><a href="#" class=" nav-link text-white">Features</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 ">
+                    <ul class="p-0">
+                        <li class="text-white mb-1 fw-bold">Terms</li>
+                        <li class="mb-1"><a href="#howtoplay" class=" nav-link text-white">How To Play</a></li>
+                        <li class="mb-1"><a href="#af" class=" nav-link text-white">Amazing Features</a></li>
+                        <li class="mb-1"><a href="#htd" class=" nav-link text-white">How To Download App</a></li>
+                    </ul>
+                </div>
+
+                <!--col-5 end-->
+            </div>
+        </div>
+    </footer>
+
+    <!--*****************DownLoad the app End *******************-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <!--      slick slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--  Custome Main js file -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
